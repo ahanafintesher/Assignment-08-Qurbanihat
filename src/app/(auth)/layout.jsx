@@ -1,4 +1,5 @@
-import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/navbar/Navbar";
 
 
 const Authlayout = ({children}) => {
@@ -6,6 +7,7 @@ const Authlayout = ({children}) => {
         <div className="bg-gray-200 min-h-screen">
            <Header></Header>
             {children}
+            <Footer></Footer>
         </div>
     );
 };
