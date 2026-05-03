@@ -23,7 +23,7 @@ const Featured = () => {
            Featured Animals
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-            Browse our premium selection of healthy, certified animals
+            Browse our premium selection of healthy & certified animals
           </p>
         </div>
 

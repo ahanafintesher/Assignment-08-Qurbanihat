@@ -19,7 +19,7 @@ const Banner = () => {
 
         <p className="text-base text-gray-600">
           Find the best selection of healthy cattle, camels, buffalo, and goats 
-          for your farming needs. Quality assured, ethically raised.
+          for your Qurbani. Quality assured, ethically raised.
         </p>
 
         <div className="flex flex-col md:flex-row gap-4">
