@@ -4,7 +4,7 @@
 import Lottie from "lottie-react";
 import animationData from "@/assets/page-not-found-animation.json"; 
 
-const Animation = () => {
+const NotFoundAnimation = () => {
   return (
     <div className="w-72 h-72">
       <Lottie animationData={animationData} loop={true} />
@@ -12,4 +12,4 @@ const Animation = () => {
   );
 };
 
-export default Animation;
+export default NotFoundAnimation;

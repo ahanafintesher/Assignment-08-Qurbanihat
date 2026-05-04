@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": "cow",
+    "breed": "Holstein Friesian",
+    "age": 3,
+    "weight": 450,
+    "price": 180000,
+    "image": "https://i.ibb.co.com/4wtD7MTc/cow-3.jpg",
+    "location": "Dhaka"
+  },
+  {
+    "id": 2,
+    "type": "cow",
+    "breed": "Sahiwal",
+    "age": 4,
+    "weight": 500,
+    "price": 200000,
+    "image": "https://i.ibb.co.com/0jVk13xD/cow-2.jpg",
+    "location": "Rajshahi"
+  },
+  {
+    "id": 3,
+    "type": "cow",
+    "breed": "Deshi",
+    "age": 2,
+    "weight": 380,
+    "price": 130000,
+    "image": "https://i.ibb.co.com/zHDV8sw0/cow.jpg",
+    "location": "Khulna"
+  },
+  {
+    "id": 4,
+    "type": "cow",
+    "breed": "Red Sindhi",
+    "age": 3,
+    "weight": 420,
+    "price": 160000,
+    "image": "https://i.ibb.co.com/HLn06YfX/cow-4.jpg",
+    "location": "Chattogram"
+  },
+  {
+    "id": 5,
+    "type": "goat",
+    "breed": "Black Bengal",
+    "age": 1.5,
+    "weight": 35,
+    "price": 18000,
+    "image": "https://i.ibb.co.com/KxTDVHRW/goat-2.jpg",
+    "location": "Dhaka"
+  },
+  {
+    "id": 6,
+    "type": "goat",
+    "breed": "Jamunapari",
+    "age": 2,
+    "weight": 45,
+    "price": 25000,
+    "image": "https://i.ibb.co.com/PGR4whN2/goat-3.jpg",
+    "location": "Sylhet"
+  },
+  {
+    "id": 7,
+    "type": "goat",
+    "breed": "Boer",
+    "age": 1.8,
+    "weight": 50,
+    "price": 30000,
+    "image": "https://i.ibb.co.com/3mLyCqZQ/goat.jpg",
+    "location": "Rajshahi"
+  },
+  {
+    "id": 8,
+    "type": "goat",
+    "breed": "Deshi",
+    "age": 1.2,
+    "weight": 30,
+    "price": 15000,
+    "image": "https://i.ibb.co.com/gFfVG5vv/goat-4.webp",
+    "location": "Barishal"
+  },
+  {
+    "id": 9,
+    "type": "camel",
+    "breed": "Arabian Camel",
+    "age": 5,
+    "weight": 600,
+    "price": 350000,
+    "image": "https://i.ibb.co.com/WN08GMDr/camel.jpg",
+    "location": "Dhaka"
+  },
+  {
+    "id": 10,
+    "type": "camel",
+    "breed": "Dromedary",
+    "age": 6,
+    "weight": 650,
+    "price": 400000,
+    "image": "https://i.ibb.co.com/0R5Z1Wkk/camel-2.jpg",
+    "location": "Chattogram"
+  },
+  {
+    "id": 11,
+    "type": "buffalo",
+    "breed": "Murrah",
+    "age": 4,
+    "weight": 550,
+    "price": 220000,
+    "image": "https://i.ibb.co.com/GvHzrRfd/buffalo.jpg",
+    "location": "Khulna"
+  },
+  {
+    "id": 12,
+    "type": "buffalo",
+    "breed": "Nili-Ravi",
+    "age": 5,
+    "weight": 600,
+    "price": 250000,
+    "image": "https://i.ibb.co.com/cSv70QXw/buffalo-2.jpg",
+    "location": "Rajshahi"
+  }
+]
