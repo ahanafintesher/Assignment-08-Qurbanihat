@@ -16,11 +16,7 @@ const AllAnimalsPage = async () => {
             <FilterSection datas={datas}></FilterSection>
          </div>
          
-         <div className="grid grid-cols-3 gap-8">
-            {
-                datas.map(data => <AnimalCard key={data.id} data={data}></AnimalCard>)
-            }
-         </div>
+        
        </div>
     );
 };

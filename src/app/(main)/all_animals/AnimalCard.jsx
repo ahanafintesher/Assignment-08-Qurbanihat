@@ -55,10 +55,10 @@ const AnimalCard = ({data}) => {
         <div className="flex items-center justify-between">
           <div>
             <p className="text-xs text-gray-400">Price</p>
-            <p className="text-xl font-bold text-green-800">৳ {data.price}</p>
+            <p className="text-xl font-bold text-green-800">৳ {data.price.toLocaleString()}</p>
           </div>
           <Link
-            href="/animals/8"
+            href={`/all_animals/animal/${data.id}`}
             className="px-5 py-2.5 bg-green-800 text-white text-sm font-medium rounded-xl hover:bg-green-900 transition-colors duration-200"
           >
             View Details

@@ -1,5 +1,7 @@
 import { Playfair_Display, Montserrat} from "next/font/google";
+import { ToastContainer } from "react-toastify";
 import "./globals.css";
+
 
 
 const montserrat =  Montserrat({
@@ -25,7 +27,14 @@ export default function RootLayout({ children }) {
       className={`${montserrat.className}  h-full antialiased`}
       data-theme="light"
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+       
+        
+          {children}
+         <ToastContainer position="top-right" autoClose={3000} />
+         
+       
+        </body>
     </html>
   );
 }
