@@ -1,5 +1,7 @@
+export const dynamic = "force-dynamic";
+
 import { getData } from "@/lib/getData";
-import AnimalCard from "./AnimalCard";
+
 import FilterSection from "./FilterSection";
 
 const AllAnimalsPage = async () => {
