@@ -4,6 +4,7 @@ import Animation from "@/components/animations/Animation";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
+import SocialLogin from "@/components/social_login/SocialLogin";
 
 const LoginPage = () => {
   const {
@@ -12,28 +13,22 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm();
 
-  const handleLogin = async(data) => {
-    const {email, password} = data;
-    const {data:res, error} = await authClient.signIn.email({
-         
-        email: email, 
-        password: password, 
-       callbackURL: "/",
-  })
- 
-};
+  const handleLogin = async (data) => {
+    const { email, password } = data;
+    const { data: res, error } = await authClient.signIn.email({
+      email: email,
+      password: password,
+      callbackURL: "/",
+    });
+  };
 
   return (
     <div className="container mx-auto min-h-[90vh] flex justify-center items-center px-4 py-8">
-
       <div className="bg-white rounded-xl shadow-lg flex flex-col lg:flex-row items-center gap-6 p-6 sm:p-8 lg:p-12 w-full max-w-3xl">
-
         {/* Animation - mobile এ উপরে, lg এ বামে */}
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <Animation />
         </div>
-
-      
 
         {/* Login Form */}
         <div className="w-full lg:w-1/2">
@@ -56,7 +51,9 @@ const LoginPage = () => {
                 placeholder="Enter your email"
               />
               {errors.email && (
-                <p className="text-red-500 font-medium">{errors.email.message}</p>
+                <p className="text-red-500 font-medium">
+                  {errors.email.message}
+                </p>
               )}
             </fieldset>
 
@@ -64,7 +61,9 @@ const LoginPage = () => {
               <legend className="fieldset-legend text-sm">Password</legend>
               <input
                 type="password"
-                {...register("password", { required: "Password field is required" })}
+                {...register("password", {
+                  required: "Password field is required",
+                })}
                 className="input w-full"
                 placeholder="Enter your password"
               />
@@ -80,7 +79,22 @@ const LoginPage = () => {
             </button>
           </form>
 
-          <div className="mt-4">
+          <div className="mt-6">
+            {/* Divider */}
+            <div className="flex items-center gap-3">
+              <div className="flex-1 h-px bg-gray-300"></div>
+              <span className="text-gray-500 text-sm font-medium">OR</span>
+              <div className="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            {/* Social Login */}
+            <div className="mt-4 flex items-center justify-center">
+              <SocialLogin />
+            </div>
+          </div>
+
+
+          <div className="mt-4 flex justify-center items-center">
             <p className="text-sm font-medium">
               Don't have an account?{" "}
               <Link className="text-green-800 hover:underline" href="/register">
@@ -89,7 +103,6 @@ const LoginPage = () => {
             </p>
           </div>
         </div>
-
       </div>
     </div>
   );

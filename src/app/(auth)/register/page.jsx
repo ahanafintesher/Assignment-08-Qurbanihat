@@ -1,7 +1,9 @@
 "use client";
 
 import Animation from "@/components/animations/Animation";
+import SocialLogin from "@/components/social_login/SocialLogin";
 import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 const RegisterPage = () => {
@@ -20,7 +22,7 @@ const RegisterPage = () => {
     email: email, 
     password: password, 
     image: photo,
-    callbackURL: "/",
+    callbackURL: "/login",
     
     })
 
@@ -106,6 +108,30 @@ const RegisterPage = () => {
               Register
             </button>
           </form>
+
+           <div className="mt-6">
+            {/* Divider */}
+            <div className="flex items-center gap-3">
+              <div className="flex-1 h-px bg-gray-300"></div>
+              <span className="text-gray-500 text-sm font-medium">OR</span>
+              <div className="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            {/* Social Login */}
+            <div className="mt-4 flex items-center justify-center">
+              <SocialLogin />
+            </div>
+          </div>
+
+
+          <div className="mt-4 flex justify-center items-center">
+            <p className="text-sm font-medium">
+              Already have an account?{" "}
+              <Link className="text-green-800 hover:underline" href="/login">
+                Login
+              </Link>
+            </p>
+          </div>
         </div>
 
       </div>

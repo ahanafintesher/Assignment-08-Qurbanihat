@@ -6,7 +6,8 @@ import { GiWeight } from "react-icons/gi";
 import { FaBirthdayCake } from "react-icons/fa";
 import { FaTag } from "react-icons/fa";
 import { toast } from "react-toastify";
-import BookingButton from "./BookingButton";
+import BookingForm from "./BookingButton";
+
 
 
 const AnimalDetailsPage = async ({ params }) => {
@@ -97,7 +98,7 @@ const AnimalDetailsPage = async ({ params }) => {
           </div>
 
           <div>
-            <BookingButton></BookingButton>
+            <BookingForm></BookingForm>
           </div>
         </div>
       </div>

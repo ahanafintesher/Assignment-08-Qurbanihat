@@ -1,4 +1,4 @@
-import { Playfair_Display, Montserrat} from "next/font/google";
+import {  Montserrat} from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "./globals.css";
 
@@ -9,11 +9,7 @@ const montserrat =  Montserrat({
    subsets: ["latin"],
  
 })
-export const playFair_Display = Playfair_Display({
-  variable: "--font-playfair-display",
-   subsets: ["latin"],
- 
-})
+
 
 export const metadata = {
   title: "Create Next App",
@@ -26,6 +22,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${montserrat.className}  h-full antialiased`}
       data-theme="light"
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
        

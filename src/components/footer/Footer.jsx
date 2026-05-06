@@ -1,7 +1,13 @@
-import { playFair_Display } from "@/app/layout";
+
+import {Playfair_Display} from "next/font/google";
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+const playFair_Display = Playfair_Display({
+  variable: "--font-playfair-display",
+   subsets: ["latin"],
+ 
+})
 
 const Footer = () => {
   return (
