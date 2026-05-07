@@ -59,25 +59,18 @@ A modern Eid ul Adha livestock marketplace built with Next.js. Users can browse 
 
 ## 🏠 Homepage
 
-> Add homepage screenshot here
 
-```md
 <img width="1902" height="901" alt="image" src="https://github.com/user-attachments/assets/0713c6c4-2925-48d0-ac00-5fc33e983081" />
 
-```
-
----
 
 ## 🐄 All Animals Page
 
-> Add all animals page screenshot here
 
-```md
+
+
 <img width="1897" height="762" alt="image" src="https://github.com/user-attachments/assets/37dff8a0-e2cd-4473-b652-40991f903976" />
 
-```
 
----
 
 # ⚙️ Run Locally
 
