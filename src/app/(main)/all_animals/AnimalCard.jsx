@@ -8,7 +8,7 @@ const AnimalCard = ({data}) => {
   return (
     <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
 
-      {/* Image */}
+      
       <div className="relative h-48 overflow-hidden bg-gray-100">
         <Image
         fill
@@ -21,10 +21,10 @@ const AnimalCard = ({data}) => {
         </span>
       </div>
 
-      {/* Content */}
+      
       <div className="p-4">
 
-        {/* Title */}
+        
         <div className="flex items-center justify-between mb-3">
           <h3 className="font-bold text-gray-800 text-lg">{data.breed}</h3>
           <span className="flex items-center gap-1 text-xs text-gray-400">
@@ -33,7 +33,7 @@ const AnimalCard = ({data}) => {
           </span>
         </div>
 
-        {/* Stats */}
+       
         <div className="grid grid-cols-2 gap-2 mb-4">
           <div className="bg-gray-50 rounded-xl px-3 py-2 flex items-center gap-2">
             <GiWeight className="text-green-700" size={16} />
@@ -51,7 +51,7 @@ const AnimalCard = ({data}) => {
           </div>
         </div>
 
-        {/* Price + Button */}
+       
         <div className="flex items-center justify-between">
           <div>
             <p className="text-xs text-gray-400">Price</p>

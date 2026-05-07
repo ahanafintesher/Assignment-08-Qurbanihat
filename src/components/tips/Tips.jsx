@@ -36,7 +36,7 @@ const Tips = () => {
     <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
 
-        {/* Header */}
+        
         <div className="text-center mb-12">
           <div className="flex justify-center mb-3">
             <FaMosque className="text-green-800" size={40} />
@@ -51,17 +51,17 @@ const Tips = () => {
             </span>
           </p>
 
-          {/* Ayah */}
+          
           <div className="mt-6 bg-green-800 text-white rounded-2xl px-6 py-5 max-w-2xl mx-auto">
             <p className="text-lg font-medium leading-relaxed italic">
-              "Their meat will not reach Him, nor will their blood, but what
-              reaches Him is your piety."
+              &ldquo;Their meat will not reach Him, nor will their blood, but what
+              reaches Him is your piety.&ldquo;
             </p>
             <p className="text-green-200 text-sm mt-2">— Surah Al-Hajj (22:37)</p>
           </div>
         </div>
 
-        {/* Tips Grid */}
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tips.map((tip, index) => (
             <div
@@ -83,7 +83,8 @@ const Tips = () => {
             </div>
           ))}
 
-          {/* Last card — reminder */}
+          
+          
           <div className="bg-green-800 rounded-2xl p-6 shadow-sm text-white sm:col-span-2 lg:col-span-1 flex flex-col justify-center">
             <FaMosque size={32} className="mb-4 text-green-300" />
             <h3 className="font-semibold text-lg mb-2">Remember</h3>

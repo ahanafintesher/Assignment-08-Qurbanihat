@@ -1,5 +1,5 @@
 export async function getData() {
-  const res = await fetch(`https://qurbanihat-teal.vercel.app/data.json`,{ cache:"no-store" })
+  const res = await fetch(`${process.env.BASE_URL}/data.json`,{ cache:"no-store" })
     .then((res) => res.json())
     .catch((err) => {
       console.error("Failed to fetch data:", err);

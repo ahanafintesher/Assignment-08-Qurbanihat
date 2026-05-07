@@ -17,7 +17,7 @@ const Featured = () => {
   return (
     <div className="container mx-auto py-8 px-4">
       <div className="bg-linear-to-br from-green-600 via-green-500 to-teal-500 rounded-3xl p-8 md:p-12 shadow-2xl">
-        {/* Header */}
+        
         <div className="text-center text-white mb-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
            Featured Animals
@@ -27,7 +27,7 @@ const Featured = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
+       
         <div className="grid md:grid-cols-4 gap-6">
           {animals.map((animal) => (
             <div
@@ -55,7 +55,7 @@ const Featured = () => {
           ))}
         </div>
 
-        {/* CTA */}
+       
         <div className="text-center mt-12">
           <Link href={"/all_animals"}>
             <button

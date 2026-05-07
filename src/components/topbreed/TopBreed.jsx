@@ -134,7 +134,7 @@ const TopBreeds = () => {
   return (
     <section className="bg-linear-to-b from-white to-green-50 py-16">
       <div className="container mx-auto px-4">
-        {/* Header */}
+       
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-6 py-2 rounded-full text-sm font-semibold mb-4">
             <span className="text-lg">🌙</span>
@@ -151,14 +151,14 @@ const TopBreeds = () => {
           </p>
         </div>
 
-        {/* Breeds Grid */}
+        
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {breeds.map((breed) => (
             <div
               key={breed.id}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
             >
-              {/* Image Container */}
+             
               <div className="relative h-56 overflow-hidden">
                 <Image
                   src={breed.image}
@@ -168,7 +168,7 @@ const TopBreeds = () => {
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
                 
-                {/* Top Badges */}
+               
                 <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
                   <span className={`${breed.badgeColor} text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg`}>
                     {breed.badge}
@@ -178,7 +178,7 @@ const TopBreeds = () => {
                   </span>
                 </div>
 
-                {/* Bottom Info */}
+               
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="bg-white/20 backdrop-blur-md rounded-lg p-2 text-white">
                     <div className="flex justify-between items-center text-sm">
@@ -189,9 +189,9 @@ const TopBreeds = () => {
                 </div>
               </div>
 
-              {/* Content */}
+              
               <div className="p-5">
-                {/* Category Tag */}
+                
                 <span className="text-xs font-semibold text-green-600 uppercase tracking-wide">
                   {breed.category}
                 </span>
@@ -200,7 +200,7 @@ const TopBreeds = () => {
                   {breed.name}
                 </h3>
 
-                {/* Weight */}
+               
                 <div className="flex items-center text-sm text-gray-600 mb-3">
                   <svg className="w-4 h-4 mr-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -208,7 +208,7 @@ const TopBreeds = () => {
                   {breed.weight}
                 </div>
 
-                {/* Features */}
+                
                 <div className="flex flex-wrap gap-1 mb-4">
                   {breed.features.slice(0, 2).map((feature, index) => (
                     <span
@@ -220,7 +220,7 @@ const TopBreeds = () => {
                   ))}
                 </div>
 
-                {/* Price & Button */}
+                
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-green-600 font-bold text-lg">
@@ -238,7 +238,7 @@ const TopBreeds = () => {
           ))}
         </div>
 
-        {/* Trust Indicators */}
+       
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           <div className="bg-white rounded-2xl p-6 text-center shadow-lg border border-green-100">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -265,7 +265,7 @@ const TopBreeds = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
+        
         <div className="mt-12 bg-linear-to-r from-green-600 to-emerald-600 rounded-3xl p-10 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">
             Ready to Book Your Qurbani Animal?

@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const playFair_Display = Playfair_Display({
   variable: "--font-playfair-display",
@@ -16,18 +17,20 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const router = useRouter();
   const { data: session } = authClient.useSession();
   const user = session?.user;
 
   const handleLogout = async () => {
     await authClient.signOut();
+     router.push("/");
   };
 
   return (
     <div className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="navbar bg-white min-h-16">
-          {/* Logo */}
+          
           <div className="navbar-start">
             <Link href="/">
               <p
@@ -38,7 +41,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Links */}
+         
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal gap-1 px-1">
               {navLinks.map((link) => (
@@ -49,35 +52,37 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Auth Buttons */}
+          
           <div className="navbar-end gap-2">
-            {/* Desktop */}
+           
             <div className="hidden lg:flex items-center gap-3">
               {user ? (
                 <div className="flex items-center gap-3">
-                  {/* Avatar */}
-                  <div className="avatar">
-                    <div className="w-9 rounded-full ring ring-green-800 ring-offset-1 overflow-hidden">
-                      {user.image && user.image.startsWith("https") ? (
-                        <Image
-                          src={user.image}
-                          alt={user.name || "user"}
-                          height={36}
-                          width={36}
-                          className="rounded-full"
-                        />
-                      ) : (
-                        <div className="w-9 h-9 bg-green-800 text-white flex items-center justify-center text-sm font-bold">
-                          {user.name?.charAt(0).toUpperCase()}
-                        </div>
-                      )}
+                 
+                  <Link href="/my_profile">
+                    <div className="avatar cursor-pointer">
+                      <div className="w-9 rounded-full ring ring-green-800 ring-offset-1 overflow-hidden">
+                        {user.image && user.image.startsWith("https") ? (
+                          <Image
+                            src={user.image}
+                            alt={user.name || "user"}
+                            height={36}
+                            width={36}
+                            className="rounded-full"
+                          />
+                        ) : (
+                          <div className="w-9 h-9 bg-green-800 text-white flex items-center justify-center text-sm font-bold">
+                            {user.name?.charAt(0).toUpperCase()}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                  {/* Name */}
+                  </Link>
+                  
                   <span className="text-sm font-medium text-gray-700">
                     {user.name}
                   </span>
-                  {/* Logout */}
+                  
                   <button
                     onClick={handleLogout}
                     className="btn btn-sm btn-outline border-green-800 text-green-800 hover:bg-green-800 hover:text-white hover:border-green-800"
@@ -103,7 +108,7 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Mobile Dropdown */}
+           
             <div className="dropdown dropdown-end lg:hidden">
               <div tabIndex={0} role="button" className="btn btn-ghost btn-sm">
                 <svg
@@ -134,7 +139,9 @@ const Navbar = () => {
                 {user ? (
                   <>
                     <li className="px-2 py-1 text-sm font-medium text-gray-700">
-                      {user.name}
+                     <Link href={'/my_profile'}>
+                       {user.name}
+                     </Link>
                     </li>
                     <li>
                       <button
