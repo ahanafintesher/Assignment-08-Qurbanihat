@@ -7,128 +7,128 @@ import camel1 from "@/assets/camel.jpg";
 import camel2 from "@/assets/camel-2.jpg";
 import goat1 from "@/assets/goat.jpeg";
 import goat2 from "@/assets/goat-2.jpg";
+import Link from "next/link";
 
 const TopBreeds = () => {
   const breeds = [
-    // Cow Breeds
     {
-      id: 1,
-      name: "Deshi Cow",
-      category: "Cow",
-      image: cow1,
-      shares: "7 Shares",
-      minAge: "2+ Years",
-      weight: "400-600 kg",
-      available: 150,
-      price: "From $2,200",
-      features: ["Local Breed", "Sturdy Build", "Perfect for Qurbani"],
-      badge: "Most Popular",
-      badgeColor: "bg-green-600"
-    },
-    {
-      id: 2,
-      name: "Sahiwal Cow",
-      category: "Cow",
-      image: cow2,
-      shares: "7 Shares",
-      minAge: "2+ Years",
-      weight: "500-700 kg",
-      available: 80,
-      price: "From $2,800",
-      features: ["Premium Quality", "Heavy Weight", "Healthy"],
-      badge: "Premium",
-      badgeColor: "bg-amber-600"
-    },
-    
-    // Camel Breeds
-    {
-      id: 3,
-      name: "Arabic Camel",
-      category: "Camel",
-      image: camel1,
-      shares: "7 Shares",
-      minAge: "5+ Years",
-      weight: "500-700 kg",
-      available: 60,
-      price: "From $4,500",
-      features: ["Pure Breed", "Large Size", "Shariah Compliant"],
-      badge: "Special",
-      badgeColor: "bg-teal-600"
-    },
-    {
-      id: 4,
-      name: "Desert Camel",
-      category: "Camel",
-      image: camel2,
-      shares: "7 Shares",
-      minAge: "5+ Years",
-      weight: "450-650 kg",
-      available: 70,
-      price: "From $4,000",
-      features: ["Resilient", "Healthy", "Age Verified"],
-      badge: "Best Value",
-      badgeColor: "bg-emerald-600"
-    },
-    
-    // Goat Breeds
-    {
-      id: 5,
-      name: "Black Bengal Goat",
-      category: "Goat",
-      image: goat2,
-      shares: "1 Share",
-      minAge: "1+ Year",
-      weight: "35-50 kg",
-      available: 300,
-      price: "From $350",
-      features: ["Premium Meat", "Tender", "High Demand"],
-      badge: "Top Choice",
-      badgeColor: "bg-green-600"
-    },
-    {
-      id: 6,
-      name: "Jamnapari Goat",
-      category: "Goat",
-      image: goat1,
-      shares: "1 Share",
-      minAge: "1+ Year",
-      weight: "50-70 kg",
-      available: 120,
-      price: "From $500",
-      features: ["Large Size", "Heavy Weight", "Healthy"],
-      badge: "Large Breed",
-      badgeColor: "bg-blue-600"
-    },
-    
-    // Buffalo Breeds
-    {
-      id: 7,
-      name: "Murrah Buffalo",
-      category: "Buffalo",
-      image: buffalo1,
-      shares: "7 Shares",
-      minAge: "2+ Years",
-      weight: "600-800 kg",
-      available: 90,
-      price: "From $3,200",
-      features: ["Heavy Weight", "Strong Build", "Certified"],
-      badge: "Heavy Breed",
-      badgeColor: "bg-purple-600"
-    },
-    {
-      id: 8,
-      name: "Nili-Ravi Buffalo",
-      category: "Buffalo",
-      image: buffalo2,
-      shares: "7 Shares",
-      minAge: "2+ Years",
-      weight: "550-750 kg",
-      available: 75,
-      price: "From $3,000",
-      features: ["Premium Quality", "Healthy", "Age Verified"],
-      badge: "Quality",
-      badgeColor: "bg-indigo-600"
-    }
+    id: 1,
+    name: "Deshi Cow",
+    category: "Cow",
+    image: cow1,
+    shares: "7 Shares",
+    minAge: "2+ Years",
+    weight: "400-600 kg",
+    available: 150,
+    price: "From ৳ 2,42,000",
+    features: ["Local Breed", "Sturdy Build", "Perfect for Qurbani"],
+    badge: "Most Popular",
+    badgeColor: "bg-green-600"
+  },
+  {
+    id: 2,
+    name: "Sahiwal Cow",
+    category: "Cow",
+    image: cow2,
+    shares: "7 Shares",
+    minAge: "2+ Years",
+    weight: "500-700 kg",
+    available: 80,
+    price: "From ৳ 3,08,000",
+    features: ["Premium Quality", "Heavy Weight", "Healthy"],
+    badge: "Premium",
+    badgeColor: "bg-amber-600"
+  },
+
+  // Camel Breeds
+  {
+    id: 3,
+    name: "Arabic Camel",
+    category: "Camel",
+    image: camel1,
+    shares: "7 Shares",
+    minAge: "5+ Years",
+    weight: "500-700 kg",
+    available: 60,
+    price: "From ৳ 4,95,000",
+    features: ["Pure Breed", "Large Size", "Shariah Compliant"],
+    badge: "Special",
+    badgeColor: "bg-teal-600"
+  },
+  {
+    id: 4,
+    name: "Desert Camel",
+    category: "Camel",
+    image: camel2,
+    shares: "7 Shares",
+    minAge: "5+ Years",
+    weight: "450-650 kg",
+    available: 70,
+    price: "From ৳ 4,40,000",
+    features: ["Resilient", "Healthy", "Age Verified"],
+    badge: "Best Value",
+    badgeColor: "bg-emerald-600"
+  },
+
+  // Goat Breeds
+  {
+    id: 5,
+    name: "Black Bengal Goat",
+    category: "Goat",
+    image: goat2,
+    shares: "1 Share",
+    minAge: "1+ Year",
+    weight: "35-50 kg",
+    available: 300,
+    price: "From ৳ 38,500",
+    features: ["Premium Meat", "Tender", "High Demand"],
+    badge: "Top Choice",
+    badgeColor: "bg-green-600"
+  },
+  {
+    id: 6,
+    name: "Jamnapari Goat",
+    category: "Goat",
+    image: goat1,
+    shares: "1 Share",
+    minAge: "1+ Year",
+    weight: "50-70 kg",
+    available: 120,
+    price: "From ৳ 55,000",
+    features: ["Large Size", "Heavy Weight", "Healthy"],
+    badge: "Large Breed",
+    badgeColor: "bg-blue-600"
+  },
+
+  // Buffalo Breeds
+  {
+    id: 7,
+    name: "Murrah Buffalo",
+    category: "Buffalo",
+    image: buffalo1,
+    shares: "7 Shares",
+    minAge: "2+ Years",
+    weight: "600-800 kg",
+    available: 90,
+    price: "From ৳ 3,52,000",
+    features: ["Heavy Weight", "Strong Build", "Certified"],
+    badge: "Heavy Breed",
+    badgeColor: "bg-purple-600"
+  },
+  {
+    id: 8,
+    name: "Nili-Ravi Buffalo",
+    category: "Buffalo",
+    image: buffalo2,
+    shares: "7 Shares",
+    minAge: "2+ Years",
+    weight: "550-750 kg",
+    available: 75,
+    price: "From ৳ 3,30,000",
+    features: ["Premium Quality", "Healthy", "Age Verified"],
+    badge: "Quality",
+    badgeColor: "bg-indigo-600"
+  }
   ];
 
   return (
@@ -138,7 +138,7 @@ const TopBreeds = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-6 py-2 rounded-full text-sm font-semibold mb-4">
             <span className="text-lg">🌙</span>
-            Eid ul Adha 2024
+            Eid ul Adha 202
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -227,9 +227,11 @@ const TopBreeds = () => {
                       {breed.price}
                     </span>
                   </div>
+                  <Link href={'/all_animals'}>
                   <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
                     Book Now
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -272,9 +274,11 @@ const TopBreeds = () => {
             Reserve your preferred breed now. Limited availability for premium breeds.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">
+           <Link href={'/all_animals'}>
+             <button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">
               Browse All Animals
             </button>
+           </Link>
             <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition-all">
               Contact for Custom Order
             </button>

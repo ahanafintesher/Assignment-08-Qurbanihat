@@ -1,3 +1,6 @@
+import dns from "node:dns";
+dns.setServers(['8.8.8.8', '8.8.4.4']);
+
 import {  Montserrat} from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "./globals.css";

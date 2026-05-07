@@ -5,8 +5,16 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
 import SocialLogin from "@/components/social_login/SocialLogin";
+import { useState } from "react";
+import { FaEye } from "react-icons/fa6";
+import { RiEyeCloseLine } from "react-icons/ri";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+
+
 
 const LoginPage = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -20,7 +28,17 @@ const LoginPage = () => {
       password: password,
       callbackURL: "/",
     });
+
+     if (error) {
+    toast.error(error.message || "Login failed!");
+    return;
+  }
+
+  toast.success("Login successful!");
+  router.push("/");
   };
+
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="container mx-auto min-h-[90vh] flex justify-center items-center px-4 py-8">
@@ -57,16 +75,25 @@ const LoginPage = () => {
               )}
             </fieldset>
 
-            <fieldset className="fieldset">
+            <fieldset className="fieldset relative">
               <legend className="fieldset-legend text-sm">Password</legend>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 {...register("password", {
                   required: "Password field is required",
                 })}
+
+              
+                
                 className="input w-full"
                 placeholder="Enter your password"
               />
+
+              <span className="absolute right-2 top-4" onClick={() =>{
+                setShowPassword(!showPassword)
+              }}>
+               {showPassword ? <FaEye /> : <RiEyeCloseLine />}
+              </span>
               {errors.password && (
                 <p className="mt-1 text-red-500 font-medium">
                   {errors.password.message}
