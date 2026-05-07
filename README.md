@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# QurbaniHat 🐄🐐
 
-## Getting Started
+A modern Eid ul Adha livestock marketplace built with Next.js. Users can browse animals, view detailed information, authenticate securely, and manage their profiles with a smooth and responsive UI.
 
-First, run the development server:
+---
+
+## 🌐 Live Website
+
+- Live Link: https://qurbanihat-teal.vercel.app/
+- GitHub Repository: https://github.com/ahanafintesher/Assignment-08-Qurbanihat
+
+---
+
+# ✨ Features
+
+- Modern and responsive homepage
+- All animals listing page
+- Individual animal details page
+- Secure authentication system
+- Google Sign-In integration
+- User profile page
+- Edit profile functionality
+- Responsive UI for all devices
+- Smooth animations using LottieFiles
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+- Next.js
+- React.js
+- Tailwind CSS
+- DaisyUI
+- React Icons
+- LottieFiles
+
+### Authentication
+- Better Auth
+- Google Authentication
+
+---
+
+# 📂 Pages
+
+| Page | Description |
+|---|---|
+| Home Page | Landing page of the website |
+| All Animals Page | Displays all available livestock |
+| Animal Details Page | Detailed information of animals |
+| Login Page | User login |
+| Register Page | User registration |
+| My Profile Page | User profile information |
+| Edit Profile Page | Profile update functionality |
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Homepage
+
+> Add homepage screenshot here
+
+```md
+<img width="1902" height="901" alt="image" src="https://github.com/user-attachments/assets/0713c6c4-2925-48d0-ac00-5fc33e983081" />
+
+```
+
+---
+
+## 🐄 All Animals Page
+
+> Add all animals page screenshot here
+
+```md
+<img width="1897" height="762" alt="image" src="https://github.com/user-attachments/assets/37dff8a0-e2cd-4473-b652-40991f903976" />
+
+```
+
+---
+
+# ⚙️ Run Locally
+
+## 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/ahanafintesher/Assignment-08-Qurbanihat.git
+```
+
+---
+
+## 2️⃣ Go to the project directory
+
+```bash
+cd Assignment-08-Qurbanihat
+```
+
+---
+
+## 3️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 4️⃣ Setup environment variables
+
+Create a `.env.local` file in the root directory and add:
+
+```env
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+BETTER_AUTH_SECRET=your_secret
+BETTER_AUTH_URL=http://localhost:3000
+```
+
+---
+
+## 5️⃣ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is deployed on Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 👨‍💻 Author
 
-## Deploy on Vercel
+### Ahanaf Intesher
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- GitHub: https://github.com/ahanafintesher
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 📄 License
+
+This project is created for educational and portfolio purposes.
